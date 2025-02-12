@@ -267,26 +267,7 @@
     :root {
       --nav-item-margin: 0;
     }
-
-    .menu-btn {
-      display: none;
-    }
-  
-    .menu-icon {
-      display: block;
-      cursor: pointer;
-    }
-  
-    .menu-icon .navicon {
-      display: block;
-      width: 30px;
-      height: 4px;
-      background-color: #000;
-      border-radius: 4px;
-      transition: all 0.3s ease-in-out;
-    }
-  
-
+    
     .header .nav {
       display: flex;
       flex-direction: column;
