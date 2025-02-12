@@ -262,6 +262,51 @@
     background-color: var(--color-primary);
     width: 100%;
   }
+
+  @media screen and (max-width: 767px) {
+    :root {
+      --nav-item-margin: 0;
+    }
+
+    .menu-btn {
+      display: none;
+    }
+  
+    .menu-icon {
+      display: block;
+      cursor: pointer;
+    }
+  
+    .menu-icon .navicon {
+      display: block;
+      width: 30px;
+      height: 4px;
+      background-color: #000;
+      border-radius: 4px;
+      transition: all 0.3s ease-in-out;
+    }
+  
+
+    .header .nav {
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      max-height: 0;
+      transition: max-height .2s ease-out;
+    }
+  
+    .menu-btn:checked ~ .navbar-menu {
+      max-height: 300px;
+    }
+  
+    .navbar-menu a {
+      margin: var(--nav-item-margin);
+      padding: 10px;
+      text-decoration: none;
+      color: #333;
+      font-size: 16px;
+    }
+  }
   
   /* Header
       ============================= */
